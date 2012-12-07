@@ -19,4 +19,8 @@ revision control is always nice, a git repo seemed as good a place as any.
 As Github is graceful enough to offer us free webhosting, having the files 
 online makes it even easier to include and re-use them. So here we are...
 
+### The Collection
+To view the various stylesheets, please visit [the accompanying website][1]
+
+[1]: http://potherca.github.com/CssBase/
 <!-- EOF -->
