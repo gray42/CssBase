@@ -1,0 +1,30 @@
+ /********( CSS Index )*************************************************/
+/*
+    1. Keyboard
+ */
+/********( Keyboard )**************************************************/
+kbd {
+    border-top: 0.3em solid #DDD;
+    border-right: 0.3em solid #666;
+    border-bottom: 0.3em solid #666;
+    border-left: 0.3em solid #DDD;
+
+    border-radius: 0.5em;
+
+    box-shadow: 0em 2em 10em #444;
+
+    background-color: #CCC;
+    text-align: center;
+    width:auto;
+    padding: 0.15em 0.4em;
+    line-height: 1em;
+}        
+
+kbd:hover, kbd.pressed  {
+    position: relative;
+    top: 0.1em;
+    left: 0.1em;
+    border-width: 0.3em 0.2em 0.2em 0.3em;
+    margin-right: 0.1em;
+}
+
