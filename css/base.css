@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono);
+
+html {
+        /*  Make sure the negative margin of the headers don't cause trouble
+            in smaller displays (or various print modes). */
+        margin-left: 2em;
+    }
+
+    body {
+        color: #333;
+        font-family: 'Droid Sans', Arial, sans-serif;
+        margin: 4.5em auto;
+        max-width: 40em;
+        min-width:  480px;
+        width: 80%;
+    }
+
+
+        /* Make sure all child elements cover the title */
+        body > * {
+            background-color: rgba(255, 255, 255, .8);
+            margin:0;
+            padding: 0.25em 1em;
+        }
+
+            /* clearfix */
+            body > *:after {
+                visibility: hidden;
+                display: block;
+                font-size: 0;
+                content: " ";
+                clear: both;
+                height: 0;
+            }
+
+    h1 {
+        color: rgba(0,0,0,0.8);
+        font-size: 200%;
+        height: 1.5em;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    h2 {
+        font-size: 140%;
+        font-weight: bold;
+        margin-left: -2em;
+        margin-top: 2em;
+    }
+
+    h3 {
+        font-size: 120%;
+        margin: 1em 0 2px -1px;
+        width:100%;
+    }
+
+    /* ------------------------------------------------------------------ *
+     *                  Hyperlinks should be hyper-sexy too!              *
+     * ------------------------------------------------------------------ */
+    a:link {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 0.1em solid #CCC;
+    }
+
+    a:visited {
+        color:#666;
+    }
+
+    a:hover,
+    a:active {
+        border-bottom-color: #C66;
+        color: #333;
+    }
+
+    a[href^="https://"],
+    a[href^="//"],
+    a[href^="http://"] {
+    /*a:hover[href^="https://"],*/
+    /*a:hover[href^="//"],*/
+    /*a:hover[href^="http://"] {*/
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAJUExURZmZmczMzAAAANmeCzsAAAADdFJOU///ANfKDUEAAAAySURBVHjaTIxRDgAACEHp/oeOtJYPe02gJEQiIvf5RgzK6B/jUHoE7dNwehP1JowtwAAXDABpSdB7KgAAAABJRU5ErkJggg%3D%3D");
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        /* @TODO local IE fix: background-image: url(//bits.wikimedia.org/static-1.20wmf3/skins/vector/images/external-link-ltr-icon.png?2012-05-14T17:46:40Z)!ie; */
+
+        padding-right: 13px;
+    }
+
+    hr {
+        padding: 0;
+        border-color: #333;
+        color: #333;
+        margin: 1em 0;
+    }
