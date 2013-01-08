@@ -10,6 +10,7 @@
 		margin: 0;
 		position: absolute;
 		top: 0;
+		background: none;
 	}
 	
 	.banner-right {
@@ -19,8 +20,13 @@
 	.banner-left {
     	left: 0;
     }
+
+	.banner-fixed {
+		position: fixed;
+    }
 	
 	.banner a {
+	    border: none;
 		display: block;
 		width: 190px;
 		font-size: 14px;
@@ -48,7 +54,15 @@
 		transform-origin: 0 0 ;	
 		box-shadow: 1px 1px 5px 1px #666;		
 	}
-	
+
+	.banner a:hover {
+	    text-shadow: 
+	          0 0 0.1em white
+	        , 0 0 0.1em white
+	        , 0 0 0.1em white
+        ;
+    }
+        
 	.banner-left a {
 		right: 20px;
 		top: 130px;
