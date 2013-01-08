@@ -9,63 +9,83 @@
     <title>CSS Base - A collection of CSS files.</title>
 
     <link rel="stylesheet" media="all" href="css/base.css" />
+    <link rel="stylesheet" media="all" href="css/ribbon.css" />
 </head>
 
 <body>
     <h1>CSS Base</h1>
-    <h2>A collection of CSS files.</h2>
+    <div>
+        <h2>A collection of CSS files.</h2>
 
-    <h3>The Problem</h3>
-    <p>
-        I like to have web pages to accompany the things I do and I like to play 
-        around with the way those pages look. At a certain point I ended up 
-        wanting to re-use one look or another which lead to CSS files being 
-        copy/pasted all over the place.
-    </p>
-    <p>
-        Of course this would not do...    
-    </p>
+        <h3>The Problem</h3>
+        <p>
+            I like to have web pages to accompany the things I do and I like to play 
+            around with the way those pages look. At a certain point I ended up 
+            wanting to re-use one look or another which lead to CSS files being 
+            copy/pasted all over the place.
+        </p>
+        <p>
+            Of course this would not do...    
+        </p>
 
-    <h3>The solution</h3>
-    <p>
-        It dawned on me I might as well just put all the CSS files I tend to 
-        recycle together in a single location. This would also improve 
-        re-usability. As some revision control is always nice, a git repo seemed 
-        as good a place as any.
-    </p>
-    <p>
-        As Github is graceful enough to offer us free webhosting, having the 
-        files online makes it even easier to include and re-use them. 
-    </p>
-    <p>
-        So here we are...
-    </p>
-    
-    <h3>The Collection</h3>
-    <p>
-        The following CSS files are available:
-    </p>
-    <dl>
-        <dt><a href="./css/code.css">code.css</a></dt>
-        <dd>
-            When you use code examples on a page, this will add some niceties to
-            the code blocks, like a description (based on the "rel" attribute)
-            and a counter (using <code>H2</code> tags as chapters).
-        </dd>
-        <dt><a href="./css/keyboard.css">keyboard.css</a></dt>
-        <dd>
-            When you use the <code>KBD</code> tag on a page, this will add make
-            it display as an actual keyboard button (distinctly different from
-            form buttons, mind you). Includes hover state for fun and confusion.
-        </dd>
-        <dt><a href="./css/ribbon.css">ribbon.css</a></dt>
-        <dd>
-            Would you like a ribon on a page, like the one on this page? How 
-            about one that is 100% CSS. No images involved! Based on <a 
-            href="http://blog.terrenceryan.com/github-ribbons-in-css/"> the 
-            excellent work by Terrence Ryan</a>, this is the one for you!
-        </dd>
-    </dl>
-<hr />
+        <h3>The solution</h3>
+        <p>
+            It dawned on me I might as well just put all the CSS files I tend to 
+            recycle together in a single location. This would also improve 
+            re-usability. As some revision control is always nice, a git repo seemed 
+            as good a place as any.
+        </p>
+        <p>
+            As Github is graceful enough to offer us free webhosting, having the 
+            files online makes it even easier to include and re-use them. 
+        </p>
+        <p>
+            So here we are...
+        </p>
+        
+        <h3>The Collection</h3>
+        <p>
+            The following CSS files are available:
+        </p>
+        <dl>
+            <dt><a href="./css/base.css">base.css</a></dt>
+            <dd>
+                This is just a basic styling I tend to use to make short pages and 
+                documentation look presentable (and hopefully slightly elegant).
+
+                It is used for this document to.
+            </dd>
+            <dt><a href="./css/code.css">code.css</a></dt>
+            <dd>
+                When you use code examples on a page, this will add some niceties to
+                the code blocks, like a description (based on the "rel" attribute)
+                and a counter (using <code>H2</code> tags as chapters).
+            </dd>
+            <dt><a href="./css/keyboard.css">keyboard.css</a></dt>
+            <dd>
+                When you use the <code>KBD</code> tag on a page, this will add make
+                it display as an actual keyboard button (distinctly different from
+                form buttons, mind you). Includes hover state for fun and confusion.
+            </dd>
+            <dt><a href="./css/ribbon.css">ribbon.css</a></dt>
+            <dd>
+                Would you like a ribon on a page, like the one on this page? How 
+                about one that is 100% CSS. No images involved! Based on <a 
+                href="http://blog.terrenceryan.com/github-ribbons-in-css/"> the 
+                excellent work by Terrence Ryan</a>, this is the one for you!
+            </dd>
+        </dl>
+    <hr />
+<!--
+        <h3>Now what?</h3>
+        <p>
+            I've tried to document my motives and the path that got me here, CSS 
+            wise. Feel free to <a href="cascade.html">read it</a>
+        </p>
+-->
+    </div>
+    <div class="banner banner-right banner-fixed">
+        <a href="//github.com/potherca/CssBase/">Steal this code!</a>
+    </div>        
 </body>
 </html>
