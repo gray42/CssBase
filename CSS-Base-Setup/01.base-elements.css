@@ -1,0 +1,253 @@
+/********( CSS Index )*********************************************************/
+/*
+    0. CSS Introduction
+    1. General Reset
+    2. Body
+    3. Links
+	    3.1. highlite off-site links
+    4. Text Elements
+    5. Lists
+    6. Tables
+
+    EOF
+ */
+
+ /********( CSS Introduction )**************************************************/
+/*
+    This document contains a foundation for all the HTML elements. It resets
+    attributes that different browsers have different defaults for. It also has
+    some font normalization and adds some base styles.
+
+    Using a combination of Eric Meyers Reset, the YUI CSS Modules and a healthy
+    dose of plain old common sense
+
+    http://meyerweb.com/eric/tools/css/reset/
+    http://developer.yahoo.com/yui/base/
+    http://developer.yahoo.com/yui/fonts/
+    http://developer.yahoo.com/yui/reset/
+    http://en.wikipedia.org/wiki/Common_Sense_(pamphlet)
+    
+    @TODO: incoporating more from https://github.com/necolas/normalize.css/blob/master/normalize.css
+*/
+
+/********( General Reset )*************************************************************/
+/*Being specific is a lot less expensive than targetting everything using a star "*" */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family:verdana, geneva, tahoma, clean, sans-serif;
+}
+
+/********( Body )**************************************************************/
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+    /**
+     * Percents could work for IE, but for backCompat purposes, we are using keywords.
+     * x-small is for IE6/7 quirks mode.
+    */
+    font-size:13px;
+    line-height: 1.231em;
+    /* position: relative; /* fix for the IE6 resize bug (position: relative becomes fixed) */
+    position: relative;
+}
+
+big {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+em {
+    font-style: oblique;
+}
+strong {
+    font-weight: bold:
+}
+
+/********( Links )*************************************************************/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:link  {}
+
+a:visited {}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active{}
+
+    /********( highlite off-site links )***************************************/
+    a[target="_blank"]:before,
+    a[target="new"]:before {
+	    margin:0 5px 0 0;
+	    padding:1px;
+	    outline:1px solid #333;
+	    color:#333;
+	    background:#ff9;
+	    font:12px "Zapf Dingbats";
+	    content: "\279C";
+    }
+
+/********( Text Elements )*****************************************************/
+p {
+    margin-bottom:1em;
+}
+
+blockquote {
+    margin:1em;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* Bump up IE to get to 13px equivalent for these fixed-width elements */
+pre, code, kbd, samp, tt {
+    font-family:monospace;
+    line-height:100%;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+
+code {
+    white-space:pre;
+}
+
+strong {
+    /*bringing boldness back to headers and the strong element*/
+    font-weight:bold;
+}
+
+abbr,acronym {
+    /*indicating to users that more info is available */
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+em {
+    /*bringing italics back to the em element*/
+    font-style:italic;
+}
+
+
+
+/********( Lists )*************************************************************/
+ol, ul {
+    list-style: none;
+}
+
+ol,ul {
+    /*bringing lists on to the page with breathing room */
+    margin:1em;
+    margin-left: 2em;
+}
+dl {
+    /*bringing lists on to the page with breathing room */
+    margin:1em 0;
+}
+
+ol li {
+    /*giving OL's LIs generated numbers*/
+    list-style: decimal outside;
+}
+
+ul li {
+    /*giving UL's LIs generated disc markers*/
+    list-style: disc outside;
+}
+
+dl dt {
+}
+
+dl dd {
+    margin-left: 1em;
+    font-style: italic;
+}
+
+/********( Tables )************************************************************/
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size:inherit;
+    font:100%;
+    margin-bottom:1em;
+}
+
+
+th,td {
+    /*borders and padding to make the table readable*/
+    /* border:1px solid #000; */
+    padding:.5em;
+}
+
+th {
+    /*distinguishing table headers from data cells*/
+    font-weight:bold;
+    text-align: center;
+}
+
+caption {
+    /*coordinated marking to match cell's padding*/
+    margin-bottom:.5em;
+    /*centered so it doesn't blend in to other content*/
+    text-align:center;
+}
+
+small {
+    font-size: .85em;
+    color: gray;
+}
+
+
+/********( IE fixes )***********************************************************/
+
+.ie6 body ,
+.ie7 body {
+    font-size:small;
+    font:x-small;
+}
+/* Bump up IE to get to 13px equivalent for these fixed-width elements */
+.ie6 pre, .ie6 code, .ie6 kbd, .ie6 samp, .ie6 tt
+.ie7 pre, .ie7 code, .ie7 kbd, .ie7 samp, .ie7 tt {
+    font-size:108%;
+}
+
+
+
+/********( EOF )***************************************************************/
+

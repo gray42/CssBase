@@ -1,0 +1,177 @@
+/********( CSS Index )*********************************************************/
+/*
+	0.1. CSS Introduction
+	0.2. Colour Scheme
+
+	1. Base Elements
+		1.1. Pseudo Classes
+
+	2. Page Header
+		2.1. Logo
+
+	3 Primary Navigation
+
+	4. Page Content
+
+	4. General Browser Specific Enhancements
+	    4.1. IE Fixes
+
+	EOF
+
+*/
+
+/********( Design Elements )***************************************************/
+/*
+    Design consist of the CSS properties that have to do with the visual styling
+    of elements and typography:
+
+    -- Box Model --
+        border
+              -style
+              -color
+
+              -radius
+
+
+              -top
+                  -style
+                  -color
+                  -left-radius
+                  -right-radius
+
+              -right
+                    -style
+                    -color
+
+              -bottom
+                     -style
+                     -color
+                     -left-radius
+                     -right-radius
+
+              -left
+                   -style
+                   -color
+
+        list-style
+                  -position
+                  -type
+                  -image
+
+        table-layout
+        caption-side
+        empty-cells
+
+  -- Typography --
+        font
+            -family
+            -size
+            -style
+            -variant
+            -weight
+
+        line-height
+
+        text-align
+        text-indent
+        text-transform
+        text-decoration
+
+        letter-spacing
+        word-spacing
+        white-space
+        vertical-align
+        
+  -- Color and Images --
+        color
+
+        background
+                  -image
+                  -repeat-x
+                  -repeat-y
+                  -attachment
+                  -position-x
+                  -position-y
+                  -origin
+                  -clip
+                  -color
+
+  -- Other --
+        opacity -- or "filter: alpha(opacity=00);zoom: 1;" for IE5-9
+
+        outline
+        cursor
+
+        content
+        quotes
+
+*/
+/********( EOF )***************************************************************/
+
+
+/********( Colour Scheme )*****************************************************/
+/*
+    darkred     = ...
+    red         = ...
+    orange      = ...
+    yellow      = ...
+    lightblue   = ...
+*/
+
+/*
+	@TODO: render correct font-stack
+	@TODO: set % font size and ems
+	@TODO: replace all color names with rgb(i,i,i) values
+*/
+
+/********( Base Elements )*****************************************************/
+body {
+	background-color: black;
+}
+
+    h1 {color: darkred;}
+    h2 {color: red;}
+    h3 {color: orange;}
+    h4 {color: yellow;}
+
+    a {color: lightblue}
+
+	/********( Pseudo Classes )************************************************/
+	:focus {
+		outline: 0px dotted;
+	}
+
+
+/********( Page Header )*******************************************************/
+	/********( Logo )********************************************************/
+/********( Page Content )**************************************************/
+	/********( Primary Navigation )********************************************/
+	/********( Content Area )**************************************************/
+
+
+/********( General Browser Specific Enhancements )*****************************/
+	::selection { /* Safari and Opera */
+		background-color: #A8C3D4;
+		color: #FFF;
+	}
+	*::-moz-selection { /* Firefox */
+		background-color: #A8C3D4;
+		color: #FFF;
+	}
+
+    /********( IE Fixes )******************************************************/
+    .ie6 .no-border,
+    .ie7 .no-border {
+        border: none;	/* IE6 doesn't support transparent */
+    }
+
+/********( EOF )***************************************************************/
+
+/* Top Level
+ ============================================================================ */
+/* Sub Level
+ ------------------------------------------------------------------------ */
+/* Lower Sub Level
+ .................................................................... */
+/* Lowest Sub Level
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
