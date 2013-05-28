@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Untitled Document</title>
+
+    <link rel="stylesheet" media="all" href="css/base.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://rawgithub.com/chjj/marked/master/lib/marked.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <p>Content could not be loaded. Please <a href="css.md" class="source">visit the text version here</a>.</p>
+    </div>
+    
+    <script>
+    var sUrl = $('.source').attr('href');
+
+    $.get(sUrl, function(p_sResult) {
+
+        $('.page').html(
+            marked(p_sResult)
+        );
+
+       var $H1 = $('h1');
+       if($H1.length > 0){
+           document.title = $H1.text() || 'Untitled Document';
+       }
+       
+    });
+    </script>   
+    
+</body>
+</html>

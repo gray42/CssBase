@@ -249,7 +249,7 @@ dose of plain old common sense
     http://en.wikipedia.org/wiki/Common_Sense_(pamphlet)
 
 
-*File contents:* [01.base-elements.css](http://potherca.github.io/CssBase/CSS-Base-Setup/01.base-elements.css)
+*File contents:* [01.base-elements.css](CSS-Base-Setup/01.base-elements.css)
 
 
 ### `02.layout.css`
@@ -264,12 +264,12 @@ related CSS files.
 
 This does mean using the shorthand property for `border` is impossible.
 
-*File contents:* [02.layout.css](http://potherca.github.io/CssBase/CSS-Base-Setup/02.layout.css)
+*File contents:* [02.layout.css](CSS-Base-Setup/02.layout.css)
 
 ### `03.Base-Design.css`
 Design consist of the CSS properties that have to do with the visual styling
 of elements and typography:
 
-*File contents:* [03.Base-Design.css](http://potherca.github.io/CssBase/CSS-Base-Setup/03.Base-Design.css)
+*File contents:* [03.Base-Design.css](CSS-Base-Setup/03.Base-Design.css)
 
 ## The End!
