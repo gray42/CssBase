@@ -1,6 +1,29 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono);
 
+/*
+
+@TODO: Incorporate solarized color scheme
+
+    base3:     #fdf6e3;
+    base2:     #eee8d5;
+    base1:     #93a1a1;
+    base0:     #839496;
+    base00:    #657b83; rgb(101, 123, 131)
+    base01:    #586e75;
+    base02:    #073642;
+    base03:    #002b36;
+
+    blue:      #268bd2;
+    cyan:      #2aa198;
+    green:     #859900;
+    magenta:   #d33682;
+    orange:    #cb4b16;
+    red:       #dc322f; rgb(220, 50, 47)
+    violet:    #6c71c4;
+    yellow:    #b58900;
+*/
+
 html {
         /*  Make sure the negative margin of the headers don't cause trouble
             in smaller displays (or various print modes). */
@@ -8,7 +31,7 @@ html {
     }
 
     body {
-        color: #333;
+        color: #586e75;
         font-family: 'Droid Sans', Arial, sans-serif;
         margin: 4.5em auto;
         max-width: 40em;
@@ -37,8 +60,8 @@ html {
     /* ------------------------------------------------------------------ *
      *                              Heads up!                             *
      * ------------------------------------------------------------------ */
-    h1 {
-        color: rgba(0,0,0,0.8);
+    h1:first-child {
+        color: #073642;
         font-size: 200%;
         height: 1.5em;
         left: 0;
@@ -72,13 +95,13 @@ html {
     }
 
     a:visited {
-        color:#666;
+        color: rgb(101, 123, 131);
     }
 
     a:hover,
     a:active {
-        border-bottom-color: #C66;
-        color: #333;
+        border-bottom-color: rgb(220, 50, 47);
+        color: #586e75;
     }
 
     a[href^="https://"],
@@ -95,11 +118,18 @@ html {
 
         padding-right: 13px;
     }
+    
+        a img {
+            border-bottom: none;
+        }
 
+    /* ------------------------------------------------------------------ *
+     *                                                                    *
+     * ------------------------------------------------------------------ */
     hr {
         padding: 0;
-        border-color: #333;
-        color: #333;
+        border-color: #586e75;
+        color: #586e75;
         margin: 1em 0;
     }
     
