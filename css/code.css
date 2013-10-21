@@ -11,7 +11,14 @@
  */
  
 /********( Counters )**********************************************************/
+/*
 
+    @TODO:  We need to seriously think about the repercussions of using code examples
+            in correlation to h2 and h3 headers. The current implementation does
+            not play nice with this as the code has it's own counter, seperate from
+            any h3 counter that may exist.
+
+*/
 body {
     counter-reset: ChapterCounter CodeCounter;
 }
@@ -24,16 +31,20 @@ h2 {
 
 
     /********( Code Block )****************************************************/
+    pre code,
     pre.code {
         counter-increment: CodeCounter;
         margin: 2em 0;
         overflow: hidden;
         padding: 2em 0 1em 2em;
         position: relative;
+        display: block;
+        white-space: pre;
                 
         box-shadow: 0em 0em 1em 0em #999;
     }
 
+    pre code:hover,
     pre.code:hover {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -43,6 +54,7 @@ h2 {
 
 
         /********( Title )*****************************************************/
+        pre code:before,
         pre.code:before {
             background-color: #FFF;
             border: 0.1em solid #000;
@@ -60,6 +72,7 @@ h2 {
             border-top-right-radius: 0.5em;
         }
         
+        pre code:hover:before,
         pre.code:hover:before {
             left: -0.2em;
         }
