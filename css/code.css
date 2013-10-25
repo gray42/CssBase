@@ -42,6 +42,7 @@ h2 {
         white-space: pre;
                 
         box-shadow: 0em 0em 1em 0em #999;
+        clear: both;
     }
 
     pre code:hover,
