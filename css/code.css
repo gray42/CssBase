@@ -60,7 +60,7 @@ h2 {
             background-color: #FFF;
             border: 0.1em solid #000;
             color: #000;
-            content: " " counter(ChapterCounter) "." counter(CodeCounter) ": " attr(rel) " ";
+            content: " " counter(ChapterCounter) "." counter(CodeCounter) ": " attr(rel)  attr(data-title) " ";
             display: block;
             font-weight: bold;
             left: -0.1em;
