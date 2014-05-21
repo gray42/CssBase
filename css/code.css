@@ -36,7 +36,6 @@ h2 {
         counter-increment: CodeCounter;
         margin: 2em 0;
         overflow: hidden;
-        padding: 2em 0 1em 2em;
         position: relative;
         display: block;
         white-space: pre;
@@ -53,10 +52,18 @@ h2 {
     }
 
 
+    pre code,
+    pre.code,
+    pre code.hljs {
+        padding: 2em 0 1em 2em;
+    }
 
         /********( Title )*****************************************************/
-        pre code:before,
-        pre.code:before {
+
+        pre code["rel"]:before,
+        pre code["data-title"]:before,
+        pre.code["rel"]:before,
+        pre.code["data-title"]:before {
             background-color: #FFF;
             border: 0.1em solid #000;
             color: #000;
