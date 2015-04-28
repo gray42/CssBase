@@ -123,6 +123,13 @@ html {
             border-bottom: none;
         }
 
+    /* Disable "external" style for badges*/
+    a[href="http://bl.ocks.org/potherca/raw/a2ae67caa3863a299ba0"] {
+        background: none;
+        border: none;
+        padding-right: 0;
+    }
+
     /* ------------------------------------------------------------------ *
      *                                                                    *
      * ------------------------------------------------------------------ */
