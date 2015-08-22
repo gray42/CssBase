@@ -76,7 +76,7 @@ improvement over my previous preference:
 ## You talking to me?
 
 I've always been in favour of commenting my stylesheets as much as I can. Not 
-just at a low level (for instance noting _why_ a certain hack for `IE6` is used, 
+just at a low level (for instance noting _why_ a certain hack for `IE6` is used), 
 but also outlining at a block or module level what is expected of a certain set 
 of CSS rules (and _why_).
 
