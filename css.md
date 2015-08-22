@@ -112,7 +112,7 @@ have settled on is this:
 
     /********( EOF )***************************************************************/
 
-In case you are wandering what the `EOF` is about, I like to mark all and any 
+In case you are wondering what the `EOF` is about, I like to mark all and any 
 file with an end-marker. That way (although this doesn't occur often at all 
 anymore), when a file doesn't get correctly transported or copied to another 
 server you have a way of telling. Also, especially in development, anything that 
