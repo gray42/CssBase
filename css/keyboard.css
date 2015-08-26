@@ -11,13 +11,11 @@ kbd {
 
     border-radius: 0.5em;
 
-    box-shadow: 0em 2em 10em #444;
-
     background-color: #CCC;
     text-align: center;
     width:auto;
     padding: 0.15em 0.4em;
-    line-height: 1em;
+    line-height: 2em;
 }        
 
 kbd:hover, kbd.pressed  {
