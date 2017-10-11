@@ -9,7 +9,8 @@
     text-decoration: none;
 }
 
-.potherca {
+.potherca,
+.Potherca {
     border-bottom: 1px solid rgb(220, 50, 50);
     border-bottom-color: rgba(220, 50, 50, 1);
     color: rgb(220, 50, 47);
@@ -20,13 +21,15 @@
     transition: border 0.35s ease-out
 }
 
-.created-by:hover .potherca {
+.created-by:hover .potherca,
+.created-by:hover .Potherca {
     color: rgb(255,255,255);
     border-color: transparent;
     border-bottom-color: rgba(220, 50, 50, 0)
 }
 
-.potherca::after {
+.potherca::after,
+.Potherca::after {
     background: no-repeat url(https://pother.ca/images/avatars/ben-cartoon-background-red-252-square.png);
     -webkit-background-size: 100%;
     background-size: 100%;
@@ -51,7 +54,8 @@
     width: 4em
 }
 
-.created-by:hover .potherca::after {
+.created-by:hover .potherca::after,
+.created-by:hover .Potherca::after {
     height: 4em;
     -moz-transform: rotatex(0deg);
     -ms-transform: rotatex(0deg);
